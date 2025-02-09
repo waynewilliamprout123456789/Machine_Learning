@@ -3,7 +3,7 @@
 This Jupyter Notebook collection is designed to support students implement [Programming for automation](https://curriculum.nsw.edu.au/learning-areas/tas/software-engineering-11-12-2022/content/year-12/fa56cc30c8#cg-1f80854c-5ce4-4d68-aa18-9a6fc0861c8c) in the [NESA Software Engineering Syllabus](https://curriculum.nsw.edu.au/learning-areas/tas/software-engineering-11-12-2022/overview) specifically using an OOP to make predictions. Open these Jupyter Notebooks in [Jupyter Notebook](https://jupyter.org/try-jupyter/lab/), VSCode or Codespaces to modify the code/data and run the code blocks.
 
 > [!Important]
-> The configuration for VSCode and Codespaces have been built into this repository.
+> The configuration for VSCode and Codespaces have been built into this repository. To ensure the necessary decencies are installed it is recommended that GitHub Codespaces is used for the Advanced Neural Network and Decision Tree implementations.
 
 ---
 
