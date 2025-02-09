@@ -7,6 +7,7 @@ import numpy as np
 from matplotlib.widgets import Slider, Button
 #plt.style.use('/deeplearning.mplstyle')
 
+
 def compute_entropy(y):
 
     entropy = 0
@@ -18,7 +19,7 @@ def compute_entropy(y):
         return 0
     else:
         return -entropy*np.log2(entropy) - (1-entropy)*np.log2(1-entropy)
-     
+
 
 def split_dataset(X, node_indices, feature):
 
@@ -31,9 +32,8 @@ def split_dataset(X, node_indices, feature):
         else:
             right_indices.append(i)
         
-    return left_indices, right_indices   
-    
-    
+    return left_indices, right_indices
+
 
 def compute_information_gain(X, y, node_indices, feature):
     
@@ -54,6 +54,7 @@ def compute_information_gain(X, y, node_indices, feature):
     information_gain = node_entropy - weighted_entropy
     
     return information_gain
+
 
 def get_best_split(X, y, node_indices):   
     num_features = X.shape[1]
@@ -91,6 +92,7 @@ def build_tree_recursive(X, y, node_indices, branch_name, max_depth, current_dep
     build_tree_recursive(X, y, left_indices, "Left", max_depth, current_depth+1, tree)
     build_tree_recursive(X, y, right_indices, "Right", max_depth, current_depth+1, tree)
     return tree
+
 
 def generate_node_image(node_indices):
     image_paths = ["images/%d.png" % idx for idx in node_indices]
@@ -208,30 +210,3 @@ def generate_tree_viz(root_indices, y, tree):
             pass
     ax.axis('off')
     plt.show()
-
-def plot_entropy():
-    def entropy(p):
-        if p == 0 or p == 1:
-            return 0
-        else:
-            return -p * np.log2(p) - (1- p)*np.log2(1 - p)
-    p_array = np.linspace(0,1,201)
-    h_array = [entropy(p) for p in p_array]
-    fig, ax = plt.subplots()
-    plt.subplots_adjust(left=0.25, bottom=0.25)
-    ax.set_title('p x H(p)')
-    ax.set_xlabel('p')
-    ax.set_ylabel('H(p)')
-    axfreq = plt.axes([0.25, 0.1, 0.65, 0.03])
-    h_plot = ax.plot(p_array,h_array)
-    scatter = ax.scatter(0,0,color = 'red', zorder = 100, s = 70)
-    slider = Slider(axfreq, 'p', 0, 1, valinit = 0, valstep = 0.05)
-
-    def update(val):
-        x = val
-        y = entropy(x)
-        scatter.set_offsets((x,y))
-
-    slider.on_changed(update)
-    return slider
-    #plt.plot()
