@@ -8,3 +8,5 @@ pydot
 graphviz
 pydot-ng
 pillow
+ipywidgets
+ipympl
