@@ -15,7 +15,7 @@ This Jupyter Notebook collection is designed to support students implement [Prog
 4. [OOP Logistic Regression Implementation](examples/4.OOP_Logistic_Regression.ipynb).
 5. [OOP Neural Network Linear Regression Implementation](examples/5.OOP_Neural_Network_Simple.ipynb).
 6. [OOP Neural Network Image Classification Implementation](examples/6.OOP_Neural_Network_Adv.ipynb).
-7. [Decision Trees Image Classification Implementation](7.OOP_Decision_Trees.ipynb).\*
+7. [Decision Trees Image Classification Implementation](example/7.OOP_Decision_Trees.ipynb).\*
 
 \*It is suggested this Jupyter Notebook is deployed in a GitHub CodeSpace to ensure all dependencies are correctly installed.
 
