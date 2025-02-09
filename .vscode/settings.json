@@ -12,5 +12,6 @@
   "workbench.editorAssociations": {
     "*.md": "vscode.markdown.preview.editor"
   },
-  "cSpell.words": ["iloc"]
+  "cSpell.words": ["iloc"],
+  "python.analysis.extraPaths": ["./lib"]
 }
