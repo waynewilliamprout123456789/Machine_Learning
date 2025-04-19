@@ -15,8 +15,9 @@ This Jupyter Notebook collection is designed to support students implement [Prog
 4. [OOP Logistic Regression Classification Implementation](examples/4.OOP_Logistic_Regression.ipynb).
 5. [OPP K-Nearest Neighbour Classification Implementation](examples/5.OOP_KNN.ipynb)
 6. [OOP Neural Network Linear Regression Implementation](examples/6.OOP_Neural_Network_Simple.ipynb) - includes notes aligning the implementation to Software Engineering Course Specifications page 29 on Neural Networks.
-7. [OOP Neural Network Image Classification Implementation](examples/7.OOP_Neural_Network_Adv.ipynb).
-8. [OOP Decision Trees Image Classification Implementation](examples/8.OPP_Decision_Trees.ipynb).
+7. [OOP with some MLOps Neural Network Intermediate Classification Implementation](examples/7.OOP_MLOps_Neural_Network_Intermediate.ipynb)
+8. [OOP Neural Network Image Classification Implementation](examples/8.OOP_Neural_Network_Adv.ipynb).
+9. [OOP Decision Trees Image Classification Implementation](examples/9.OPP_Decision_Trees.ipynb).
 
 ## Other Jupyter Notebooks In the TempeHS Machine Learning Series
 
