@@ -9,3 +9,5 @@ graphviz
 pydot-ng
 pillow
 pydotplus
+seaborn
+networkx
